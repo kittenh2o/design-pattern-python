@@ -1,0 +1,1 @@
+This is a repository of various design patterns implemented in python.
