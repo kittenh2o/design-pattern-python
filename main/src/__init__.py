@@ -1,3 +1,6 @@
 __all__ = [
-    "singleton.py"
+    "singleton",
+    "command",
+    "factory",
+    "observer"
 ]
