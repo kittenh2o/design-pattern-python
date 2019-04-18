@@ -1,12 +1,7 @@
-import sys
 import unittest
-from os.path import dirname
-
-sys.path.insert(0, dirname(dirname(__file__)))
 
 from src.observer import (EmailSubscriber, NewsPublisher, ObserverA, ObserverB,
                           SMSSubscriber, Subject)
-
 
 
 class TestObserver(unittest.TestCase):

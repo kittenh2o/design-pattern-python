@@ -1,9 +1,8 @@
-from os.path import dirname
-import sys
 import unittest
 
-sys.path.insert(0, dirname(dirname(__file__)))
-from src.singleton import LazySingleton, MetaSingleton, singleton, SingletonClassDecor
+from src.singleton import (LazySingleton, MetaSingleton, SingletonClassDecor,
+                           singleton)
+
 
 class TestSingleton(unittest.TestCase):
     def test_lazy_singleton(self):
