@@ -1,10 +1,8 @@
 import unittest
-import sys
-from os.path import dirname
 
-sys.path.insert(0, dirname(dirname(__file__)))
-from src.command import (Invoker, ConcreteCommand, Receiver,
-                         Agent, BuyStockOrder, SellStockOrder, StockTrade)
+from src.command import (Agent, BuyStockOrder, ConcreteCommand, Invoker,
+                         Receiver, SellStockOrder, StockTrade)
+
 
 class TestCommand(unittest.TestCase):
     def test_command(self):

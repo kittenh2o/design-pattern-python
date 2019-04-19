@@ -1,9 +1,7 @@
 import unittest
-import sys
-from os.path import dirname
 
-sys.path.append(dirname(dirname(__file__)))
-from src.factory import Panda, SimpleFactory, CanadianPizzaFactory
+from src.factory import CanadianPizzaFactory, Panda, SimpleFactory
+
 
 class TestSimpleFactory(unittest.TestCase):
     def test_simple_factory(self):

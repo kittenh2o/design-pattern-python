@@ -1,12 +1,7 @@
-import sys
 import unittest
-from os.path import dirname
-
-sys.path.insert(0, dirname(dirname(__file__)))
 
 from src.observer import (EmailSubscriber, NewsPublisher, ObserverA, ObserverB,
                           SMSSubscriber, Subject)
-
 
 
 class TestObserver(unittest.TestCase):
@@ -35,8 +30,3 @@ class TestObserver(unittest.TestCase):
         publisher.add_news("Trade war is over!")
         publisher.notify_subscribers()
 
-
-
-if __name__ == "__main__":
-    suite = unittest.TestLoader().loadTestsFromTestCase(TestObserver)
-    unittest.TextTestRunner(verbosity=2).run(suite)
