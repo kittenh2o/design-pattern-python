@@ -30,8 +30,3 @@ class TestObserver(unittest.TestCase):
         publisher.add_news("Trade war is over!")
         publisher.notify_subscribers()
 
-
-
-if __name__ == "__main__":
-    suite = unittest.TestLoader().loadTestsFromTestCase(TestObserver)
-    unittest.TextTestRunner(verbosity=2).run(suite)

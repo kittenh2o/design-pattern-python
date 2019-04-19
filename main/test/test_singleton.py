@@ -49,5 +49,3 @@ class TestSingletonClassDecorator(unittest.TestCase):
         c2 = C()
         self.assertIs(c1, c2)
 
-if __name__ == "__main__":
-    unittest.main(exit=False)
